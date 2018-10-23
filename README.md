@@ -8,7 +8,10 @@ development, this client-lib will be changing rapidly and we do not
 recommend utilizing it yet for production-level code.
 
 # Installation
-The AMP Python client requires a version >=3.6 Python environment.  
+The AMP Python client requires a version **>=3.6 Python**. We also
+**STRONGLY** recommend setting up a virtualenv with a lib prior to implementing
+the client.  We will be submitting to the PyPi index as soon as the codebase
+matures to a beta-level state.
 
 ```python
 pip install requirements.txt
