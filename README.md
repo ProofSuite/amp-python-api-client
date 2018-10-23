@@ -1,6 +1,14 @@
 # amp-python-api-client
 A simple AMP client with interfaces to an instance of the AMP decentralized exchange
 
+REST API documentation can be found here:
+
+https://github.com/ProofSuite/amp-matching-engine/blob/develop/REST_API.md
+
+WS API documentation can be found here:
+
+https://github.com/ProofSuite/amp-matching-engine/blob/develop/WEBSOCKET_API.md
+
 This is a simple python client for the AMP Decentralized Exchange API.
 It provides a simple interface utilizing Python types for accessing
 various functions on the AMP API.  Given that the API itself is in
