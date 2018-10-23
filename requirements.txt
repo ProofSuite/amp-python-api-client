@@ -1,0 +1,4 @@
+requests
+web3
+websocket-client
+pysha3
