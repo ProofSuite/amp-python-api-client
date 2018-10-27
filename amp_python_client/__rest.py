@@ -48,7 +48,7 @@ class ampRestEndpoints(object):
         uri = self.base_endpoint + token_endpoint
         return requests.get(uri).json()
 
-    def getRegisteredBaseTokens(self):
+    def getRegisteredQuoteTokens(self):
         token_endpoint = rest_endpoints.GET_REGISTERED_QUOTE_TOKENS
         uri = self.base_endpoint + token_endpoint
         return requests.get(uri).json()
