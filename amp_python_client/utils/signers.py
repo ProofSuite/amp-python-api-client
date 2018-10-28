@@ -1,5 +1,5 @@
 
-# @ Author: David Van Isacker
+# @Author: David Van Isacker
 
 """
 
@@ -44,6 +44,25 @@ export const createOrderCancel = async function(orderHash) {
 }
 """
 
+def signOrder(order):
+  order.get("hash") = getOrderHash(order)
+
+  signature = this.signMessage(list(order.hash))
+  r, s, v  = utils.splitSignature(signature)
+
+  order.signature = { "R": r, "S": s, "V": v }
+  return order
+
+
+def signTrade(trade):
+  trade["hash"] = getTradeHash(trade)
+
+  signature = signMessage(list(trade.hash))
+  r, s, v  = utils.splitSignature(signature)
+
+  trade["signature"] = { "R": r, "S": s, "V": v }
+  return trade
+
 
 def createRawOrder (_user_address, _exchange_addr, _side, _pair_obj, _amount, _price, _make_fee, _take_fee):
     order = {}
@@ -51,7 +70,7 @@ def createRawOrder (_user_address, _exchange_addr, _side, _pair_obj, _amount, _p
     quote_token_addr = pair.get("quoteTokenAddress")
 
     #let exchangeAddress = EXCHANGE_ADDRESS[this.provider.network.chainId]
-  
+
     # The amountPrecisionMultiplier and pricePrecisionMultiplier are temporary multipliers
     # that are used to turn decimal values into rounded integers that can be converted into
     # big numbers that can be used to compute large amounts (ex: in wei) with the amountMultiplier
