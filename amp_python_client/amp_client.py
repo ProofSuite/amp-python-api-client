@@ -10,8 +10,10 @@ class AmpClient(object):
 
     def __init__(self, _host = None, _port = None, _rest_protocol = "http", _ws_protocol = "ws"):
         """
+        This client object gathers resources from other packages and makes available for import.  
         All calls return as Python Objects
         """
+        #TODO: Clean up imports to be more pythonic
         self.host = str(_host) or str(HOST)
         self.port = str(_port) or str(PORT)
 
