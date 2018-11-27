@@ -1,3 +1,9 @@
+
+[![Chat on discord](https://img.shields.io/discord/308323056592486420.svg?logo=discord)](https://discord.gg/gvxeqMf)
+[![GitHub Issues](https://img.shields.io/github/issues/Proofsuite/amp-dex.svg)](https://github.com/Proofsuite/amp-python-api-client/issues)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+
 # amp-python-api-client
 A simple AMP client with interfaces to an instance of the AMP decentralized exchange
 
@@ -205,3 +211,6 @@ cancelOrder(_hash, _order_hash, _signature):
 
 submitSignature(_order_hash, _order, _remaining_order, _matches_array)
 ```
+# Contact
+
+If you have questions, ideas or suggestions, you can reach our development team on Discord in the #developer channel.  [Discord Link](https://discordapp.com/invite/eChaHFk)
